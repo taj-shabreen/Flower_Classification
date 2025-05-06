@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Classification Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        h1 {
+            color: #4CAF50;
+        }
+
+        .result-card {
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #fdfdfd;
+            border: 1px solid #ccc;
+        }
+
+        .image-container {
+            margin: 20px 0;
+        }
+
+        .result-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+        }
+
+        .prediction {
+            font-size: 1.5em;
+            color: #4CAF50;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Flower Classification Result</h1>
+
+        <div class="result-card">
+            <h2>Classification Result</h2>
+            <div class="image-container">
+                <img src="{{ url_for('static', filename='data/' + image_path) }}" alt="Flower Image" class="result-image">
+            </div>
+            <p class="prediction">Prediction: <strong>{{ prediction }}</strong></p>
+        </div>
+
+        <div class="button-container">
+            <a href="/" class="button">Classify Another Image</a>
+        </div>
+    </div>
+</body>
+</html>
