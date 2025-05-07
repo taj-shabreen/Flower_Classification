@@ -1,4 +1,4 @@
-# 🌸 Real-Time Flower Classification using CNN
+# 🌸 Flower Classification using CNN
 
 An AI-powered web app for real-time flower image classification using a Convolutional Neural Network (CNN).
 Built with **Flask**, **HTML5/CSS3**, and trained on 4,000+ flower images.
@@ -115,8 +115,9 @@ Then open your browser at:
 > Add your demo image to `static/images/` and reference it like this:
 
 ```markdown
-![Prediction Result 1](docs/prediction_result1.png)
-![Prediction Result 2](docs/prediction_result2.png)
+![Prediction Result 1](https://raw.githubusercontent.com/taj-shabreen/Flower_Classification/main/static/images/prediction_result1.png)
+
+![Prediction Result 2](https://raw.githubusercontent.com/taj-shabreen/Flower_Classification/main/static/images/prediction_result2.png)
 
 ```
 
