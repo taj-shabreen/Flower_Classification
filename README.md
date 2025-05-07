@@ -110,16 +110,12 @@ Then open your browser at:
 
 ---
 
-## 🖼️ Demo Screenshot
+## 🖼️ Demo Screenshots
 
-> Add your demo image to `static/images/` and reference it like this:
-
-```markdown
 ![Prediction Result 1](https://raw.githubusercontent.com/taj-shabreen/Flower_Classification/main/static/images/prediction_result1.png)
 
 ![Prediction Result 2](https://raw.githubusercontent.com/taj-shabreen/Flower_Classification/main/static/images/prediction_result2.png)
 
-```
 
 ---
 
